@@ -37,11 +37,11 @@ export default async function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {books.map((book) => (
              <Link
-  key={book.id}
-  href={`/books/${book.id}`}
-  className="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col"
->
-              >
+            key={book.id}
+            href={`/books/${book.id}`}
+           className="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col"
+           >
+              
                 <div className="aspect-[3/4] bg-emerald-50 relative overflow-hidden flex items-center justify-center p-4">
                   {book.coverImage ? (
                     <img
